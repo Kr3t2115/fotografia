@@ -1,0 +1,200 @@
+@media only screen and (max-width: 600px) {
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: #f3ecdbd2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: block;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 300%;
+    font-family: "Lexend", sans-serif;
+
+    color: red;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 100px;
+    right: 65px;
+    font-size: 60px;
+  }
+
+  .header {
+    z-index: 2;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(247, 142, 142, 0.918);
+  }
+  .header ul {
+    display: none;
+  }
+  .header i {
+    display: block;
+    font-size: 30px;
+  }
+  .underHeader {
+    height: auto;
+    display: block;
+  }
+  .underHeader img {
+    width: 100%;
+  }
+  .underHeader div {
+    text-align: center;
+    width: 90%;
+    display: block;
+  }
+
+  .underHeader div h1 {
+    margin-top: 20px;
+    font-size: 250%;
+  }
+
+  .underHeader div p {
+    word-wrap: break-word;
+    text-align: center;
+  }
+  .underHeader div button {
+    margin: auto;
+  }
+  .whatCanIdo {
+    display: block;
+  }
+  .whatLeft {
+    width: 100%;
+    text-align: center;
+  }
+  .whatRight {
+    width: 100%;
+  }
+
+  .portfolio {
+    height: 100%;
+  }
+
+  .imageGallery {
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+  .onceImg {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+
+  .about {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .about img {
+    width: 100%;
+  }
+
+  .aboutRight {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    word-wrap: break-word;
+  }
+
+  .aboutRight h4 {
+    margin: 0;
+  }
+  .aboutRight p {
+    margin: 0;
+  }
+
+  .prices {
+    height: auto;
+    display: block;
+    padding: 30px;
+  }
+  .details {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .customers {
+    height: auto;
+    display: block;
+    padding: 30px;
+  }
+
+  .customerDetail {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .question {
+    height: auto;
+  }
+
+  .questionDetail {
+    width: 100%;
+    height: auto;
+    text-align: left;
+  }
+  .writeToMe {
+    display: block;
+    height: auto;
+  }
+  .writeToMe img {
+    display: none;
+  }
+  #mobileImage {
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .leftWrite {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+  }
+  .allFormToContact {
+    display: block;
+    height: auto;
+  }
+
+  .contactDetail {
+    width: 100%;
+    margin: 0;
+    height: 150px;
+  }
+  .submitButton {
+    margin-bottom: 20px;
+  }
+}

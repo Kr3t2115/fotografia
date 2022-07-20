@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strona 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="forMobile.css" />
+    <meta name="description" content="Szymon Baranowicz" />
+
+    <script
+      src="https://kit.fontawesome.com/92551ee9a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#" onclick="closeNav()">Home</a>
+        <a href="#" onclick="closeNav()">Portfolio</a>
+        <a href="#" onclick="closeNav()">O mnie</a>
+        <a href="#" onclick="closeNav()">Cennik</a>
+        <a href="#" onclick="closeNav()">Kontakt</a>
+      </div>
+    </div>
+
+    <div class="header">
+      <h2>
+        Patric Kowalski <br />
+        Photograph
+      </h2>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Porfolio</a></li>
+        <li><a href="#">O mnie</a></li>
+        <li><a href="#">Cennik</a></li>
+        <li id="kontakt"><a href="#">Kontakt</a></li>
+      </ul>
+
+      <i class="fa-solid fa-bars" onclick="openNav()"></i>
+    </div>
+
+    <div class="underHeader">
+      <img src="./img/mehome.jpeg" alt="my pic" />
+
+      <div>
+        <h1>
+          Hej, Jestem <br />
+          Patric, jestem <br />fotografem
+        </h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+        <a href="#"> <button id="red">Porfolio</button></a>
+
+        <a href="#"> <button id="bisquit">Kontakt</button></a>
+      </div>
+    </div>
+
+    <div class="whatCanIdo">
+      <div class="whatLeft">
+        <h3>
+          Co mogę dla <br />
+          Ciebie zrobić ?
+        </h3>
+        <p>
+          Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+          przemyśle poligraficznym.
+        </p>
+        <a href="#"> <button id="red">Porfolio</button></a>
+      </div>
+
+      <div class="whatRight">
+        <div class="textCard">
+          <div class="icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+            przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
+            nieznanego drukarza do wypełnienia tekstem próbnej książki.
+          </p>
+        </div>
+
+        <div class="textCard">
+          <div class="icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+            przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
+            nieznanego drukarza do wypełnienia tekstem próbnej książki.
+          </p>
+        </div>
+        <div class="textCard">
+          <div class="icon"><i class="fa-solid fa-images"></i></div>
+          <h3>Lorem ipsum</h3>
+          <p>
+            Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w
+            przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez
+            nieznanego drukarza do wypełnienia tekstem próbnej książki.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio">
+      <h1>Porfolio</h1>
+      <h3>Lorem Ipsum is simply dummy</h3>
+
+      <div class="imageGallery">
+        <div class="onceImg">
+          <img src="./img/photo1.jpg" alt="" />
+          <h4>Lorem ipsum</h4>
+        </div>
+
+        <div class="onceImg">
+          <img src="./img/photo2.jpg" alt="" />
+          <h4>Lorem ipsum</h4>
+        </div>
+
+        <div class="onceImg">
+          <img src="./img/photo3.jpg" alt="" />
+          <h4>Lorem ipsum</h4>
+        </div>
+
+        <div class="onceImg">
+          <img src="./img/photo4.jpg" alt="" />
+          <h4>Lorem ipsum</h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <img src="./img/me3.jpeg" alt="" />
+
+      <div class="aboutRight">
+        <h4>O mnie</h4>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
+    </div>
+
+    <div class="prices">
+      <div class="details">
+        <h3>Lorem Ipsum</h3>
+
+        <h2>300</h2>
+
+        <h4>zł/netto</h4>
+
+        <h5>Lorem Ipsum</h5>
+
+        <h5>Lorem Ipsum</h5>
+
+        <h5>Lorem Ipsum</h5>
+
+        <button id="red">Wybierz</button>
+      </div>
+
+      <div class="details">
+        <h3>Lorem Ipsum</h3>
+
+        <h2>500</h2>
+
+        <h4>zł/netto</h4>
+
+        <h5>Lorem Ipsum</h5>
+
+        <h5>Lorem Ipsum</h5>
+
+        <h5>Lorem Ipsum</h5>
+
+        <button id="red">Wybierz</button>
+      </div>
+
+      <div class="details">
+        <h3>Lorem Ipsum</h3>
+
+        <h2>1000</h2>
+
+        <h4>zł/netto</h4>
+
+        <h5>Lorem Ipsum</h5>
+
+        <h5>Lorem Ipsum</h5>
+
+        <h5>Lorem Ipsum</h5>
+
+        <button id="red">Wybierz</button>
+      </div>
+    </div>
+
+    <div class="customers">
+      <div class="customerDetail">
+        <img src="./img/logo.png" alt="" />
+
+        <h3>Klient</h3>
+
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s.
+        </p>
+
+        <button id="red">Czytaj</button>
+      </div>
+
+      <div class="customerDetail">
+        <img src="./img/logo.png" alt="" />
+
+        <h3>Klient</h3>
+
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s.
+        </p>
+
+        <button id="red">Czytaj</button>
+      </div>
+
+      <div class="customerDetail">
+        <img src="./img/logo.png" alt="" />
+
+        <h3>Klient</h3>
+
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s.
+        </p>
+
+        <button id="red">Czytaj</button>
+      </div>
+    </div>
+
+    <div class="customerOpinion">
+      <h3>Mówią o mnie...</h3>
+
+      <img src="./img/client.jpeg" alt="" />
+
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Ipsum has been the industry's
+        <br />standard dummy text ever since the 1500s, when an unknown printer
+        took a galley of type and scrambled it to <br />make a type specimen
+        book.
+      </p>
+
+      <h5>Marika</h5>
+      <p style="padding-bottom: 50px">Modelka</p>
+    </div>
+
+    <div class="question">
+      <h2>Najczęstsze pytania</h2>
+
+      <div class="questionDetail">
+        <p>Czym jest Lorem Ipsum ?</p>
+        <i class="fa-solid fa-angle-down" id="get"></i>
+        <span style="display: none" id="panel"
+          >Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </span>
+      </div>
+
+      <div class="questionDetail">
+        <p>Do czego tego użyć ?</p>
+        <i class="fa-solid fa-angle-down" id="get1"></i>
+        <span style="display: none" id="panel1"
+          >Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </span>
+      </div>
+
+      <div class="questionDetail">
+        <p>Skąd się wzieło?</p>
+        <i class="fa-solid fa-angle-down" id="get2"></i>
+        <span style="display: none" id="panel2"
+          >Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </span>
+      </div>
+
+      <div class="questionDetail">
+        <p>Jest dostępnych wiele różnych wersji tego?</p>
+        <i class="fa-solid fa-angle-down" id="get3"></i>
+        <span style="display: none" id="panel3"
+          >Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </span>
+      </div>
+
+      <div class="questionDetail">
+        <p>Skąd to wziąść ?</p>
+        <i class="fa-solid fa-angle-down" id="get4"></i>
+        <span style="display: none" id="panel4"
+          >Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </span>
+      </div>
+    </div>
+
+    <div class="writeToMe">
+      <div class="leftWrite">
+        <img src="./img/me1.jpeg" alt="" id="mobileImage" />
+        <h2>Napisz do mnie</h2>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
+        <div class="mail">
+          <form
+            action="https://formsubmit.co/zawodowcy.szymon@gmail.com"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Imię" required />
+            <input type="text" name="email" placeholder="Email" required />
+            <textarea placeholder="Wiadomość" name="text" required></textarea>
+            <input type="submit" class="submitButton" value="Wyślij!" />
+          </form>
+        </div>
+      </div>
+      <img src="./img/me1.jpeg" alt="" />
+    </div>
+
+    <div class="contact">
+      <h3 id="namiary">Namiary</h3>
+
+      <div class="allFormToContact">
+        <div class="contactDetail">
+          <div class="contactIcon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contactText">
+            <h3>Telefon</h3>
+            <p>+48 213 213 213</p>
+          </div>
+        </div>
+
+        <div class="contactDetail">
+          <div class="contactIcon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contactText">
+            <h3>Email</h3>
+            <p onclick="copyTo('info@site.com')">
+              info@site.com
+              <br />
+              <span class="tooltiptext">Kliknij by skopiować</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="contactDetail">
+          <div class="contactIcon">
+            <i class="fa-solid fa-location-pin"></i>
+          </div>
+          <div class="contactText">
+            <h3>Adres</h3>
+            <a
+              href="https://www.google.com/maps/place/Urz%C4%85d+Gminy/@51.3421658,19.2361749,54m/data=!3m1!1e3!4m5!3m4!1s0x471a1142eb521325:0xb1763b5792ddfe34!8m2!3d51.3421804!4d19.2360917"
+              target="_blank"
+            >
+              <p>
+                Kluki 12/123 ul.Powrotu mojego starego
+                <br />
+                <span class="tooltiptext">Zobacz na mapie</span>
+              </p></a
+            >
+          </div>
+        </div>
+
+        <div class="contactDetail">
+          <div class="contactIcon"><i class="fa-solid fa-clock"></i></div>
+          <div class="contactText">
+            <h3>Godziny</h3>
+            <p>9:00-18:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>@ Copyright 2022 Szymon Baranowicz</h2>
+    </div>
+  </body>
+</html>

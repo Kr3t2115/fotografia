@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  background-color: #f3ecdb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+.overlay {
+  display: none;
+}
+
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header h2 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 1000;
+  font-size: 150%;
+  color: red;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline;
+  resize: none;
+}
+
+.header li {
+  float: left;
+  margin: 20px;
+}
+
+.header li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+}
+
+.header li:not(#kontakt) a:hover {
+  border-bottom: 1px solid black;
+}
+
+#kontakt {
+  background-color: rgb(245, 194, 132);
+  border-radius: 6px;
+  color: white !important;
+}
+
+.header i {
+  display: none;
+}
+
+.underHeader {
+  width: 100%;
+  height: 700px;
+  background-color: #f3ecdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.underHeader img {
+  height: 85%;
+}
+
+.underHeader div {
+  margin-left: 5%;
+  width: 25%;
+  text-align: center;
+}
+
+.underHeader div h1 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 1000;
+  font-size: 400%;
+  color: red;
+  margin: 20px;
+}
+.underHeader div p {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  color: gray;
+}
+.underHeader div button {
+  width: 100px;
+  height: 40px;
+  font-family: "Lexend", sans-serif;
+  color: white;
+}
+#red {
+  background-color: red;
+  border: 2px solid red;
+  margin: 20px;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  font-family: "Lexend", sans-serif;
+  color: white;
+}
+
+#red:hover {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  transition: 1s;
+}
+
+#bisquit {
+  background-color: rgb(245, 194, 132);
+  border: 2px solid rgb(245, 194, 132);
+  border-radius: 5px;
+}
+
+#bisquit:hover {
+  border: 2px solid rgb(245, 194, 132);
+  color: rgb(245, 194, 132);
+  background-color: white;
+  transition: 1s;
+}
+
+.whatCanIdo {
+  grid-area: whaat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.whatLeft {
+  width: 40%;
+  height: auto;
+  text-align: left;
+}
+
+.whatLeft h3 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 900;
+  font-size: 400%;
+  margin: 20px;
+}
+
+.whatLeft p {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: gray;
+  margin: 20px;
+}
+
+.whatRight {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.textCard {
+  width: 100%;
+  height: auto;
+  margin: 30px;
+}
+.textCard h3 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 900;
+  font-size: 100%;
+}
+
+.textCard p {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: gray;
+  margin: 10px;
+}
+
+.textCard i {
+  font-size: 30px;
+  color: white;
+}
+.icon {
+  float: left;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  background-color: red;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.portfolio {
+  background-color: #f3ecdb;
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portfolio h1 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 200%;
+  color: red;
+  padding: 20px;
+  padding-top: 120px;
+}
+.portfolio h3 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 130%;
+  color: gray;
+  padding: 20px;
+}
+.imageGallery {
+  width: 80%;
+  margin: auto;
+  height: 300px;
+  display: block;
+}
+
+.onceImg {
+  width: 22%;
+  height: auto;
+  float: left;
+  margin: auto;
+  margin: 20px;
+}
+
+.onceImg h4 {
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  margin: 20px;
+}
+
+.onceImg img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.about {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.about img {
+  height: 100%;
+}
+
+.aboutRight {
+  margin: 60px;
+  width: 40%;
+  height: auto;
+}
+
+.aboutRight h4 {
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 250%;
+  color: red;
+  margin: 20px;
+}
+.aboutRight p {
+  margin: 20px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: gray;
+}
+
+.prices {
+  width: 100%;
+  height: 600px;
+  background-color: #f3ecdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  background-color: white;
+  text-align: center;
+  width: 20%;
+  height: 400px;
+  margin: 30px;
+}
+
+.details h3 {
+  color: black;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 150%;
+  margin: 20px;
+}
+
+.details h2 {
+  color: red;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 300%;
+}
+.details h4 {
+  color: black;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+.details h5 {
+  color: black;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  margin: 20px;
+}
+.details button {
+  margin-bottom: 10px;
+}
+
+.customers {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customerDetail {
+  margin: 30px;
+  width: 20%;
+  text-align: center;
+  background-color: #f3ecdb;
+  height: 400px;
+}
+.customerDetail h3 {
+  color: black;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 200%;
+}
+
+.customerDetail p {
+  margin: 20px;
+  color: black;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+}
+.customerDetail img {
+  margin: 30px;
+}
+.customerOpinion {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #f3ecdb;
+}
+
+.customerOpinion h3 {
+  color: red;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 200%;
+  padding-top: 70px;
+}
+.customerOpinion img {
+  border-radius: 50%;
+  margin: 20px;
+}
+.customerOpinion h5 {
+  margin: 20px;
+  color: black;
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+}
+
+.customerOpinion p {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+}
+
+.question {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.question h2 {
+  color: red;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 200%;
+  padding-top: 70px;
+}
+
+.questionDetail {
+  padding: 50px;
+  margin: auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid gray;
+}
+.questionDetail p {
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
+  font-size: 100%;
+}
+.questionDetail i {
+  color: red;
+  font-size: 30px;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.questionDetail span {
+  margin-top: 20px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  font-size: 100%;
+  text-align: left;
+}
+
+.writeToMe {
+  background-color: #f3ecdb;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.writeToMe img {
+  height: 80%;
+}
+
+#mobileImage {
+  display: none;
+}
+.leftWrite {
+  margin: 100px;
+  width: 20%;
+  height: auto;
+}
+.leftWrite h2 {
+  color: red;
+  font-family: "Lexend", sans-serif;
+  font-weight: 800;
+  margin: 0px;
+  font-size: 300%;
+}
+.leftWrite p {
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  margin-top: 20px;
+}
+
+.mail {
+  width: 100%;
+  height: auto;
+}
+.mail input {
+  width: 100%;
+  padding: 15px;
+  height: 50px;
+  margin-top: 20px;
+  font-family: "Lexend", sans-serif;
+  border: 2px solid white;
+}
+.mail textarea {
+  font-family: "Lexend", sans-serif;
+  width: 100%;
+  padding: 15px;
+  height: 100px;
+  margin-top: 20px;
+  border: 2px solid white;
+}
+
+.submitButton {
+  background-color: rgb(245, 194, 132);
+  font-family: "Lexend", sans-serif;
+  height: 50px !important;
+  color: white;
+  width: 100%;
+  height: auto;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  font-size: 100%;
+  border: 2px solid rgb(245, 194, 132) !important;
+}
+
+.contact {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+}
+
+#namiary {
+  margin: 70px;
+  text-align: center;
+  color: red;
+  font-weight: 600;
+  font-size: 300%;
+  font-family: "Lexend", sans-serif;
+}
+
+.allFormToContact {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 120x;
+}
+
+.contactDetail {
+  width: 40%;
+  height: 200px;
+  margin: 20px;
+  float: left;
+  background-color: #f3ecdb;
+}
+
+.contactIcon {
+  width: 15%;
+  height: 100%;
+  float: left;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contactIcon i {
+  color: red;
+  font-size: 30px;
+}
+
+.contactText {
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+.contactText h3 {
+  margin: 20px;
+  margin-top: 11%;
+  color: black;
+  font-weight: 600;
+  font-size: 200%;
+  font-family: "Lexend", sans-serif;
+}
+.contactText p {
+  margin: 20px;
+  color: gray;
+  font-weight: 500;
+  font-size: 100%;
+  font-family: "Lexend", sans-serif;
+}
+
+.contactText a {
+  text-decoration: none;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  color: black !important;
+}
+
+.contactText p:hover .tooltiptext {
+  visibility: visible;
+}
+
+.footer {
+  margin-top: 60px;
+  clear: both;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: rgb(39, 38, 38);
+}
+.footer h2 {
+  padding: 20px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  color: white;
+}
